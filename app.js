@@ -8,8 +8,6 @@ const AuthMiddleware = require("./src/middlewares/AuthMiddleware");
 const { dbInstance, getUserDetails } = require("./src/utills/dbInstance");
  
 
-
-
 const SALT = "NKpNROxvp23DCetoXpgE";
 
 const app = express();
