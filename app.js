@@ -17,7 +17,7 @@ app.use(cookieParser());
 app.use(express.json()); // this will user to get the json request which user has send req.body.
 
 const corsOptions = {
-    origin: 'http://localhost:5173', // Allow only your frontend client
+    origin: ['http://localhost:5173', 'http://3.107.223.94'], // Allow only your frontend client
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'], // Allowed HTTP methods
     allowedHeaders: ['Content-Type', 'Authorization'], // Allowed custom headers
     credentials: true // Allow cookies/authorization headers if needed
